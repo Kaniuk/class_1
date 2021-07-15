@@ -230,48 +230,33 @@
            Если светофор красный и машин нет- вывести "стой все рано".
            Если светофор красный - и машины есть вывести "стой и жди".
            Если светофор в аварийном режиме вывести "делай что хочешь"!
-           (var1 + "|" + var2) {
-       case "something|something_else":
 
    */
     let lights = prompt('What color do you see?');
     let isRoadClear = confirm('Is the road clear');
 
 
-    switch (lights + "|" + isRoadClear) {
-        case
-        'green' | isRoadClear === true :
-            alert('you can go!');
-            break;
-        case
-        'green' | isRoadClear === false :
-            alert('wait');
-            break;
-        case
-        'yellow' | isRoadClear === false :
-            alert('Wait for green light');
-            break;
-        case
-        'yellow' | isRoadClear === true :
-            alert('Still wait');
-            break;
-        case
-        'red' | isRoadClear === true :
-            alert('Still wait');
-            break;
-        case
-        'red' | isRoadClear === false :
-            alert('STOP and WAIT');
-            break;
-        case 'the traffic light does not work':
-            alert('you can do whatever you want)');
-            break;
-        default:
-            alert('Answer the questions ');
-            break;
-
-
+    if (lights === 'green' & isRoadClear === true) {
+        alert('you can go!');
+    } else if (lights === 'green' & isRoadClear === false) {
+        alert('wait');
+    } else if
+    (lights === 'yellow' & isRoadClear === false) {
+        alert('Wait for green light');
+    } else if
+    (lights === 'yellow' & isRoadClear === true) {
+        alert('Still wait');
+    } else if
+    (lights === 'red' & isRoadClear === true) {
+        alert('Still wait');
+    } else if
+    (lights === 'red' & isRoadClear === false) {
+        alert('STOP and WAIT');
+    } else if
+    (lights === 'the traffic light does not work') {
+        alert('you can do whatever you want)')
     }
+
 
 
 </script>
