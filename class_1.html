@@ -80,26 +80,26 @@
      Значееня площі зберігати в змінній s.*/
 
 
-   /* function square(a, b) {
-        let s = (a * b);
-        return s;
-    }
+    /* function square(a, b) {
+         let s = (a * b);
+         return s;
+     }
+
+     let height = 23;
+     let width = 10;
+     console.log(square(height, width));
+
+
+     function square1(height, width) {
+         let s = (height * width);
+         return s;
+     }
+
+     console.log(square1(23, 10));*/
 
     let height = 23;
     let width = 10;
-    console.log(square(height, width));
-
-
-    function square1(height, width) {
-        let s = (height * width);
-        return s;
-    }
-
-    console.log(square1(23, 10));*/
-
-    let height = 23;
-    let width = 10;
-    let s = (height*width);
+    let s = (height * width);
     console.log(s);
 
 
@@ -122,15 +122,15 @@
     /*У прямоугольного треугольника две стороны n (со значением 3) и m (со значением 4).
     Найдите гипотенузу k по теореме Пифагора (нужно использовать функцию Math.pow(число, степень) или оператор возведения в степень ** ).
 */
-   /* function hypotenuse(n, m) {
-        let k =Math.sqrt(Math.pow(n, 2) + Math.pow(m, 2));
-        return k;
-    }
-    console.log(hypotenuse(3,4));*/
+    /* function hypotenuse(n, m) {
+         let k =Math.sqrt(Math.pow(n, 2) + Math.pow(m, 2));
+         return k;
+     }
+     console.log(hypotenuse(3,4));*/
 
     let n = 3;
     let m = 4;
-    let k =Math.sqrt(Math.pow(n, 2) + Math.pow(m, 2));
+    let k = Math.sqrt(Math.pow(n, 2) + Math.pow(m, 2));
     console.log(k);
 
 
@@ -178,6 +178,101 @@
     const welcomeMessage = `Доброго вечора, ${firstName} ${middleName}! Мої вітання що Вам ${age} років!`;
 
     alert(welcomeMessage);
+
+    /*  Три різних числа вводяться через prompt().
+          За допомоги if else вивести іх в порядку зростання. (відсортувати по зростанню)*/
+
+
+    let number = prompt('Type number');
+
+    if (number === 0) {
+        alert('Your number is 0');
+    } else if (number >= 1) {
+        alert('Good job, your number is more than 1');
+    } else if (number < 0) {
+        alert('I think this number is not good');
+    }
+    /* Все параматры получаем с клавиатуры!!!!
+         Имитируем поведение пешехода на перекстке.
+         Если светофор зеленый - вывести "иди".
+         Если светофор желтый - вывести "подожди".
+         Если светофор красный - вывести "стой".
+         Если светофор в аварийном режиме вывести "делай что хочешь"!*/
+
+    let trafficLights = prompt('What color do you see?');
+
+    switch (trafficLights) {
+        case 'green':
+            alert('you can go!');
+            break;
+        case 'yellow':
+            alert('Wait for green light');
+            break;
+        case 'red':
+            alert('STOP!');
+            break;
+        case 'the traffic light does not work':
+            alert('you can do whatever you want)')
+            break;
+        default:
+            alert('Answer the questions ')
+            break;
+
+
+    }
+    /*   Все параметры получаем с клавиатуры!!!!(prompt , confirm)
+       Создать переменную isRoadClear которая характеризирует наличие на дороге машин.
+           Улучшаем предыдущее задание.
+           Если светофор зеленый и машин нет - вывести "иди".
+           Если светофор зеленый и машины есть  - вывести подожди пока нарушители проедут".
+       Если светофор желтый и машины есть - вывести "жди".
+           Если светофор желтый и машин нет - вывести "все рано жди".
+           Если светофор красный и машин нет- вывести "стой все рано".
+           Если светофор красный - и машины есть вывести "стой и жди".
+           Если светофор в аварийном режиме вывести "делай что хочешь"!
+           (var1 + "|" + var2) {
+       case "something|something_else":
+
+   */
+    let lights = prompt('What color do you see?');
+    let isRoadClear = confirm('Is the road clear');
+
+
+    switch (lights + "|" + isRoadClear) {
+        case
+        'green' | isRoadClear === true :
+            alert('you can go!');
+            break;
+        case
+        'green' | isRoadClear === false :
+            alert('wait');
+            break;
+        case
+        'yellow' | isRoadClear === false :
+            alert('Wait for green light');
+            break;
+        case
+        'yellow' | isRoadClear === true :
+            alert('Still wait');
+            break;
+        case
+        'red' | isRoadClear === true :
+            alert('Still wait');
+            break;
+        case
+        'red' | isRoadClear === false :
+            alert('STOP and WAIT');
+            break;
+        case 'the traffic light does not work':
+            alert('you can do whatever you want)');
+            break;
+        default:
+            alert('Answer the questions ');
+            break;
+
+
+    }
+
 
 </script>
 
