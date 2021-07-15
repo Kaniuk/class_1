@@ -236,21 +236,21 @@
     let isRoadClear = confirm('Is the road clear');
 
 
-    if (lights === 'green' & isRoadClear === true) {
+    if (lights === 'green' && isRoadClear) {
         alert('you can go!');
-    } else if (lights === 'green' & isRoadClear === false) {
+    } else if (lights === 'green' && !isRoadClear) {
         alert('wait');
     } else if
-    (lights === 'yellow' & isRoadClear === false) {
+    (lights === 'yellow' && !isRoadClear) {
         alert('Wait for green light');
     } else if
-    (lights === 'yellow' & isRoadClear === true) {
+    (lights === 'yellow' && isRoadClear) {
         alert('Still wait');
     } else if
-    (lights === 'red' & isRoadClear === true) {
+    (lights === 'red' && isRoadClear) {
         alert('Still wait');
     } else if
-    (lights === 'red' & isRoadClear === false) {
+    (lights === 'red' && !isRoadClear) {
         alert('STOP and WAIT');
     } else if
     (lights === 'the traffic light does not work') {
